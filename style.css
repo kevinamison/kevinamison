@@ -1,0 +1,64 @@
+h2 {
+  color: orange;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+nav li a {
+  display: block;
+  color: orange;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #555;
+  color: orange;
+}
+nav ul {
+  border: 1px solid #555;
+}
+
+nav li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+  float: left;
+  display: inline;
+}
+
+nav li:last-child {
+  border-bottom: none;
+}
+
+.home-picture {
+  width: 20%;
+  height: 20%;
+}
+.hxh-pic {
+  width: 50%;
+  height: 50%;
+}
+.tg-pic{
+  width: 20%;
+  height: 15%;
+}
+
+.sr-only {
+position: absolute;
+top: auto;
+left: -10000px;
+width: 1px;
+height: 1px;
+overflow:hidden;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
