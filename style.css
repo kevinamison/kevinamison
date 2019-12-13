@@ -1,15 +1,21 @@
 * {
+  /* background-color: grey; */
+  margin: 0;
+  padding: 0;
+}
+body {
   background-color: grey;
 }
 h2 {
-  color: orange;
+  color: black;
+  background: orange;
 }
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 
@@ -19,6 +25,7 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  background-color: black;
 }
 
 nav li a:hover {
@@ -41,21 +48,31 @@ nav li:last-child {
 }
 
 .top-anime {
-  background: linear-gradient(135deg, #FF7926 0%, rgba(255,165,0,0) 70%);
-box-shadow: -1px 9px 13px 2px rgba(255,165,0,0.6);
-}
 
+  background: orange;
+  border: 4px solid black;
+  height: 100%;
+  text-align: center;
+  /* overflow: hidden; */
+
+}
+.recent-review{
+  background: orange;
+  border: 4px solid black;
+  text-align: center;
+  height: 100%;
+}
 .home-picture {
-  width: 20%;
-  height: 20%;
+  height: 80%;
 }
 .hxh-pic {
-  width: 50%;
-  height: 50%;
+  border: 4px solid orange;
+  width: 90%;
+  height: auto;
 }
 .tg-pic{
-  width: 20%;
-  height: 15%;
+  border: 4px solid orange;
+  width: 25%;
 }
 
 .sr-only {
@@ -69,4 +86,71 @@ overflow:hidden;
 
 p {
   font-family: 'Roboto', sans-serif;
+}
+
+.homepagedisplay {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.homepagedisplay a {
+  color: black;
+  font-size: 1.25em;
+  /* padding: 10px 0 10px 0; */
+    text-decoration: none;
+}
+
+.homepagedisplay img {
+  /* padding: 0 10px 0 10px; */
+  width: 80%;
+  margin: 0 10% 0 10%;
+
+}
+
+.featured-review-link {
+  background-color: orange;
+  border: 4px solid black;
+}
+
+footer {
+  margin: 5%;
+}
+
+.reviews {
+  text-align: center;
+}
+
+.review-text {
+  color: black;
+  background-color: orange;
+border: 4px solid black;
+  grid-area: text;
+  padding: 10px;
+  text-align: left;
+}
+
+.reviewStyle {
+
+  background-color: orange;
+}
+
+.review-text h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.reviewImg {
+  grid-area: img;
+  padding: 10px;
+}
+
+.review-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+  "img img img"
+  "text text text";
 }
